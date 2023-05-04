@@ -1,0 +1,529 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/*
+Element selector: element
+Class selector: .class-value
+ID selector: #id-value
+Attribute selector: element[name="value"]
+Universal selector: *
+Media query: @
+
+Color Pallete:
+Font Color: (black) #17202a rgb(23,32,42)
+(darkorange) #d68910 rgb (214,137,16)
+(lightblue) #d68910
+Header Color: (darkgrey) #4d5656 rgb(77,86,86)
+(gunblue) #1b4f72 rgb (174,214,241)
+Background: (lightgrey) #aeb6bf rgb(174,182,191)
+#85929e rgb(133,146,158)
+
+Fonts:
+Body Text: roboto
+Heading Text: bruno ace sc
+*/
+
+/* syntax variables */
+
+/* Universal & Element Styles */
+    *{
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+    }
+    body {
+        font-family: 'bruno ace sc', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        background-color:#ddd8ce;
+        color: undefined;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+    h2{
+        font-size: 24px;
+    }
+    h3{
+        font-size: 18px;
+    }
+
+    a {
+        color: #222222;
+    }
+
+    /* visited link */
+    a:visited {
+        color: #7234fa;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    /* selected link */
+    a:active {
+        color: #7234fa
+    }
+
+    /* No underlining when hovering over a link */
+    a:focus {
+        outline: 2px solid #334464;
+        text-decoration: none;
+    }
+
+    input:focus {
+        outline: undefined;
+    }
+
+    textarea:focus {
+        outline: undefined;
+    }
+
+    td {
+        outline: 2px solid #334464;
+        padding: 10px;
+    }
+
+
+/* Header Class Styles */
+
+    .page-header {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        padding: 20px;
+    }
+
+    /*.page-header__item {
+        flex: 0 1 200px;
+        width: 800px;
+        height: 500px;
+        
+    } */
+
+    .page-header__item:last-child {
+        -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
+        text-align: right;
+    }
+
+    .navigation-list {
+        list-style-type: none;
+    }
+
+    .navigation-list li {
+        display: inline-block;
+        margin-left: 15px;
+    }
+
+/* footer class styles*/
+
+    .page__footer {
+        clear:both;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        text-align: center;
+    }
+
+/* button styles */
+
+.button {
+    /* overwrites browser defaults and resets the border */
+    border: none;
+    display: inline-block;
+    /* takes the font from the outer container */
+    font-family: inherit;
+    /* styles the button */
+    background-color: #334464;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    /* width of the border, type, color */
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    -webkit-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+    margin-block: 20px;
+  }
+
+button {
+    /* overwrites browser defaults and resets the border */
+    border: none;
+    display: inline-block;
+    /* takes the font from the outer container */
+    font-family: inherit;
+    /* styles the button */
+    background-color: #334464;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    /* width of the border, type, color */
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    -webkit-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+    margin-block: 20px;
+  }
+  
+  button:hover,
+  button:focus,
+  .button:hover,
+  .button:focus {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.8;
+  }
+
+    .submit-button {
+        background-color: #7234fa;
+        color: #ddd8ce;
+        font-size: 15px;
+        width: 200px;
+        height: 30px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .submit-button:hover {
+        background-color: #334464;
+        color: #ddd8ce;
+        font-size: 15px;
+    }
+
+    .submit-button:active {
+        background-color: #312f36;
+        color:#ddd8ce;
+    }
+
+
+/* Main class styles */
+    /* index.html styles */
+
+    .profile {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .profile__portrait {
+        float:left;
+        height: auto;
+        width: 250px;
+        margin-right: 40px;
+        border-radius: 50%;
+    }
+    
+    .profile__text {
+        -webkit-box-flex: 1;
+            -ms-flex: 1 1 100px;
+                flex: 1 1 100px;
+    }
+
+    .profile__text--web {
+        background-color: #222222;
+        color: #aed5f1;
+    }
+
+    .profile__text--bracket {
+        background-color: #312f36;
+        color: #d68910;
+    }
+
+ /* about.html styles */
+    
+    .about {
+        max-width: 700px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .skills-table {
+        margin: 0 auto;
+        outline: 2px solid #334464
+    }
+
+    .skills-table__head--item {
+        background-color: #334464;
+        font-weight: 700;
+        color: #ddd8ce;
+    }
+
+    ul.no-bullets {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .berlin-illustration {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        float: left;
+    }
+   
+/* contact.html styles */
+    .contact {
+        max-width: 700px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .contact__method {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .contact__method--info {
+        width: 50%;
+        padding: 10px;
+    }
+   
+    .contact-name {
+        margin-top: 0;
+    }
+
+    .contact__method--form {
+        width: 50%;
+        padding: 10px;
+    }
+
+    .contact-label {
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+
+    .contact__method--input, .contact__method--textarea {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+/* work.html styles */
+
+    .work__head {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        text-align: center;
+    }
+    
+    .grid {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+        margin: 20px;
+        height: auto;
+        text-align: center;
+    }
+
+    .grid__item {
+        background-color: #334464;
+        width: auto;
+        min-height: auto;
+        margin: 0;
+        padding: 5px;
+        color: #ddd8ce;
+    }
+
+    .grid__item:nth-child(1) {
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 2;
+        grid-column: 1 / 3;
+    }
+
+    .grid__item:nth-child(3) {
+        -ms-grid-row: 2;
+        -ms-grid-row-span: 2;
+        grid-row: 2 / 4;
+    }
+
+    .grid__item:nth-child(6) {
+        -ms-grid-column: 2;
+        -ms-grid-column-span: 2;
+        grid-column: 2 / 4;
+    }
+
+    .button {
+        /* overwrites browser defaults and resets the border */
+        border: none;
+        display: inline-block;
+        /* takes the font from the outer container */
+        font-family: inherit;
+        /* styles the button */
+        background-color: #312f36;
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 3px;
+        /* width of the border, type, color */
+        border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+        -webkit-transition: opacity 0.2s;
+        -o-transition: opacity 0.2s;
+        transition: opacity 0.2s;
+        margin-block: 20px;
+      }
+
+    button {
+        /* overwrites browser defaults and resets the border */
+        border: none;
+        display: inline-block;
+        /* takes the font from the outer container */
+        font-family: inherit;
+        /* styles the button */
+        background-color: #312f36;
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 3px;
+        /* width of the border, type, color */
+        border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+        -webkit-transition: opacity 0.2s;
+        -o-transition: opacity 0.2s;
+        transition: opacity 0.2s;
+        margin-block: 20px;
+      }
+
+    /* svg animation for about page */
+
+    @-webkit-keyframes color-change {
+        0% {
+          fill: #edc655;
+        }
+        50% {
+          fill: #fcffad;
+        }
+        100% {
+          fill: #f76414;
+        }
+      }
+
+    @keyframes color-change {
+        0% {
+          fill: #edc655;
+        }
+        50% {
+          fill: #fcffad;
+        }
+        100% {
+          fill: #f76414;
+        }
+      }
+
+      .sun {
+        -webkit-animation: 4s color-change infinite alternate linear;
+                animation: 4s color-change infinite alternate linear;
+      }
+
+      @-webkit-keyframes cloud-move {
+        from {
+          -webkit-transform: translate(0, 50px);
+                  transform: translate(0, 50px);
+        }
+        to {
+          -webkit-transform: translate(200px, 50px);
+                  transform: translate(200px, 50px);
+        }
+      }
+
+      @keyframes cloud-move {
+        from {
+          -webkit-transform: translate(0, 50px);
+                  transform: translate(0, 50px);
+        }
+        to {
+          -webkit-transform: translate(200px, 50px);
+                  transform: translate(200px, 50px);
+        }
+      }
+
+      .cloud-front {
+        -webkit-animation: 30s cloud-move infinite alternate linear;
+                animation: 30s cloud-move infinite alternate linear;
+      }
+
+      @-webkit-keyframes cloud-move-reverse {
+        from {
+          -webkit-transform: translate(446px, 48px);
+                  transform: translate(446px, 48px);
+        }
+        to {
+          -webkit-transform: translate(100px, 48px);
+                  transform: translate(100px, 48px);
+        }
+      }
+
+      @keyframes cloud-move-reverse {
+        from {
+          -webkit-transform: translate(446px, 48px);
+                  transform: translate(446px, 48px);
+        }
+        to {
+          -webkit-transform: translate(100px, 48px);
+                  transform: translate(100px, 48px);
+        }
+      }
+
+      .cloud-back {
+        -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
+                animation: 34s cloud-move-reverse infinite alternate linear;
+      }
+
+
+    /* overwriting media values for different screen sizes */
+
+    @media all and (max-width: 500px) {
+        .grid {
+            -ms-grid-columns: 1fr;
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media all and (min-width: 500px) and (max-width: 750px) {
+        .grid {
+            -ms-grid-columns: 1fr 20px 1fr;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @media all and (max-width: 750px) {
+        .grid {
+            grid-gap: 10px;
+        }
+        .grid__item:nth-child(1) {
+            grid-column: auto / auto;
+            grid-row: auto / auto;
+        }
+        .grid__item:nth-child(3){
+            grid-column: auto / auto;
+            grid-row: auto / auto;
+        }
+        .grid__item:nth-child(6){
+            grid-column: auto / auto;
+            grid-row: auto / auto;
+        }
+        h1 {
+            font-size: 22px;
+        }
+    }
