@@ -39,7 +39,7 @@ Heading Text: bruno ace sc
         font-weight: 400;
         font-size: 20px;
         background-color:#ddd8ce;
-        color: undefined;
+        color: #7234fa;
     }
 
     h1 {
@@ -77,11 +77,11 @@ Heading Text: bruno ace sc
     }
 
     input:focus {
-        outline: undefined;
+        outline: #334464;
     }
 
     textarea:focus {
-        outline: undefined;
+        outline: #334464;
     }
 
     td {
